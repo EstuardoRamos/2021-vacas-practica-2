@@ -66,8 +66,8 @@ public class Principal {
                 System.out.println("Desordenado:");
                 tablaPeliculas.mostrarPeliculas();
                 System.out.println("\n\nPeliculas Ordenadas de A a Z:");
-                tablaPeliculas.ordenarPorNombrePeliculas(true);
-                //tablaPeliculas.ordenarPeliculas();
+                //tablaPeliculas.ordenarPorNombrePeliculas(true);
+                tablaPeliculas.ordenarPeliculas();
                 tablaPeliculas.mostrarPeliculas();
             }
 
