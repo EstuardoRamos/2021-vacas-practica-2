@@ -25,6 +25,7 @@ public class Principal {
             System.out.println("5) Ingresar peliculas");
             System.out.println("6) Mostrar peliculas");
             System.out.println("7) Ordenar Peliculas Ascendente");
+            System.out.println("8) Modificar datos peliculas");
             System.out.println("-1) Salir");
             System.out.println("\n");
             menu = IngresoDatos.getEntero("Ingrese la opción ", true);
@@ -68,6 +69,12 @@ public class Principal {
                 System.out.println("\n\nPeliculas Ordenadas de A a Z:");
                 //tablaPeliculas.ordenarPorNombrePeliculas(true);
                 tablaPeliculas.ordenarPeliculas();
+                tablaPeliculas.mostrarPeliculas();
+            }
+            if (menu == 8){
+                //Modificar peliculas
+                tablaPeliculas.mostrarPeliculas();
+                tablaPeliculas.modificarPelicula();
                 tablaPeliculas.mostrarPeliculas();
             }
 

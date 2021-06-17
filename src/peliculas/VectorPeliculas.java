@@ -75,4 +75,25 @@ public class VectorPeliculas {
 
     }
 
+    public void modificarPelicula() {
+        System.out.println("Modificar pelicula");
+        int id = IngresoDatos.getEntero("Ingrese Id de la pelicula", false);
+        System.out.println("1. Cambiar nombre.");
+        System.out.println("2. Cambiar año");
+        System.out.println("3. Cambiar categoria");
+        int mod = IngresoDatos.getEntero("Seleccione la opcion", false);
+        if (mod == 1) {
+            String nomNuevo = IngresoDatos.getTexto("Ingrese nuevo nombre: ");
+            peliculas[id-1].setNombrePelicula(nomNuevo);
+        }
+        if (mod == 2) {
+            int anioNuevo = IngresoDatos.getEntero("Ingrese nuevo año", false);;
+            peliculas[id-1].setAnio(anioNuevo);
+        }
+        if (mod == 3) {
+            String catNueva = IngresoDatos.getTexto("Ingrese categoria: ");
+            peliculas[id-1].setCategoria(catNueva);
+        }
+    }
+
 }
