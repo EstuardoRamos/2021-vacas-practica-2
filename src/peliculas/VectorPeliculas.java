@@ -29,12 +29,14 @@ public class VectorPeliculas {
 
     //mostrar clientes
     public void mostrarPeliculas() {
-        System.out.println("\n\n Libros de memorabilia");
+        System.out.println("\n\n Peliculas de memorabilia");
         for (int i = 0; i < (siguientePeli - 1); i++) {
             System.out.println("-" + i + ") " + peliculas[i].getInformacionPeli());
         }
 
         System.out.println("\n\n");
+        System.out.println("Tenemos un total de "+(siguientePeli-1)+" peliculas disponibles.");
+        System.out.println("");
     }
 
     public void ordenarPeliculas() {
